@@ -18,6 +18,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import org.lwjgl.glfw.GLFW;
 
@@ -41,7 +42,7 @@ public class NostripClient implements ClientModInitializer {
         doStrip = config.isStripping();
 
         UseBlockCallback.EVENT.register(((playerEntity, world, hand, blockHitResult) -> {
-            if (!world.isClient) return ActionResult.PASS;
+            if (!world.isClient()) return ActionResult.PASS;
             if (doStrip) return ActionResult.PASS;
 
             ItemStack stack = playerEntity.getStackInHand(hand);
@@ -70,11 +71,13 @@ public class NostripClient implements ClientModInitializer {
             config.saveConfig(new File(FabricLoader.getInstance().getConfigDir() + "/nostrip_config.json"));
         });
 
+        var catagory = KeyBinding.Category.create(Identifier.of("nostrip", "keys"));
+
         keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.nostrip.togglestrip",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_Y,
-                "category.nostrip.title"
+                catagory
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {

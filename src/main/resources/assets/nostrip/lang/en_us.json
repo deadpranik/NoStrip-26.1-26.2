@@ -5,5 +5,5 @@
   "text.nostrip.prevented" : "§aNoStrip has prevented this action",
   "text.nostrip.enableby" : "§aNoStrip has prevented this action, press %s§a to toggle",
   "key.nostrip.togglestrip": "Toggle Log Stripping",
-  "category.nostrip.title" : "No Strip"
+  "key.category.nostrip.keys" : "No Strip"
 }

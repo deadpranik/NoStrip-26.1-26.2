@@ -5,5 +5,5 @@
   "text.nostrip.prevented" : "§aNoStrip ha impedito questa azione",
   "text.nostrip.enableby" : "§aNoStrip ha impedito questa azione, premi %s§a per cambiare",
   "key.nostrip.togglestrip": "Attiva/Disattiva lo scortecciamento dei tronchi",
-  "category.nostrip.title" : "No Strip"
+  "key.category.nostrip.keys": "No Strip"
 }

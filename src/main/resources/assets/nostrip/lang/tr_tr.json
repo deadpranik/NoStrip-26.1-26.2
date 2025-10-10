@@ -5,5 +5,5 @@
   "text.nostrip.prevented" : "§aNoStrip bu eylemi engelledi.",
   "text.nostrip.enableby" : "§aNoStrip bu eylemi engelledi, engeli açmak için %s§a tusuna bas",
   "key.nostrip.togglestrip": "Ağaç Soymayı Aç/Kapa",
-  "category.nostrip.title" : "No Strip (Soymak Yok)"
+  "key.category.nostrip.keys": "No Strip (Soymak Yok)"
 }

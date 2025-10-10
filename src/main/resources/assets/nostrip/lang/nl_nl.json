@@ -5,5 +5,5 @@
   "text.nostrip.prevented" : "§aNoStrip heeft deze actie verhinderd",
   "text.nostrip.enableby" : "§aNoStrip heeft deze actie heeft verhinderd, druk %s§a om te schakelen",
   "key.nostrip.togglestrip": "Toggle Log Strippen",
-  "category.nostrip.title" : "Niet strippen"
+  "key.category.nostrip.keys": "Niet strippen"
 }
