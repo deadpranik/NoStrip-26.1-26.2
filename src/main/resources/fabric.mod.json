@@ -5,7 +5,7 @@
   "name": "No Strip",
   "description": "Adds a toggle for whether you can strip logs",
   "authors": [
-    "Potatoboy9999"
+    "deadpranik"
   ],
   "contributors": [
     "gbl"
@@ -23,9 +23,10 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=0.7.2",
-    "fabric": "*",
-    "minecraft": ">=1.21.10"
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": ">=26.1 <26.2",
+    "java": ">=25"
   },
   "accessWidener": "nostrip.accesswidener"
 }
